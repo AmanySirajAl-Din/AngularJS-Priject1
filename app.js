@@ -6,6 +6,12 @@
     // chunck of HTML in index.html
     // angular.module("the name of the App", [dependencies needed] )
     // we don't need dependencies so we will leave it as empty array
-    angular.module('myFirstApp', []);
+    angular.module('myFirstApp', [])
+    
+    // controller is to define the viewModel of our view
+    // .controller('name of the controller, the functionality of it);
+    .controller('myFirstController', function(){
+        
+    });
      
 })();
