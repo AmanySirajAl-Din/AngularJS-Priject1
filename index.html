@@ -5,7 +5,7 @@ which means that anything in this tag
 Angular will be responsible for
 So this angular.module in app.js was bound to our HTML
 -->
-<html ng-app="myFirstApp">
+<html>
     <head>
         <meta charset="utf-8"/>
         <script src="angular.min.js"></script>
@@ -17,9 +17,9 @@ So this angular.module in app.js was bound to our HTML
         </style>
         <title>Name Calculator</title>
     </head>
-    <body>
+    <body ng-app="NameCalculator">
         <h1>Name Calculator</h1>
-        <div>
+        <div ng-controller="NameCalculatorController">
             <div>
                 Your name:
                 <input type="text">
