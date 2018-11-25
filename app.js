@@ -14,7 +14,10 @@
     // $scope an object that allows us to share data
     //scope will be accesable in the controller component
     .controller('myFirstController', function($scope){
-        $scope.name = "Amany"
+        $scope.name = "Amany";
+        $scope.sayHello = function(){
+            return "Hello Amany";
+        };
     });
      
 })();
