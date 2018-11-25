@@ -5,25 +5,29 @@ which means that anything in this tag
 Angular will be responsible for
 So the angular.module in app.js was bound to our HTML
 -->
-<html ng-app="myFirstApp">
+<html>
     <head>
         <meta charset="utf-8"/>
-        <title>AngularJS Project 1</title>
         <script src="angular.min.js"></script>
         <script src="app.js"></script>
+        <style>
+            body{
+                font-size: 1.3em;
+            }
+        </style>
+        <title>Name Calculator</title>
     </head>
-    <body>
-        <h1>Hello AngularJS</h1>
-        <h2>Let's get started</h2>
-        <!-- 
-        ng-controller .. angular controller
-        which means that anything in this tag
-        is controled by angular controller
-        So this piece of the view is begin bound to app.js
-        (to the funtion of the controller)
-        -->
-        <div ng-controller="myFirstController">
-        
+    <body ng-app="NameCalculator">
+        <h1>Name Calculator</h1>
+        <div ng-controller="NameCalculatorController">
+            <div>
+                Your name:
+                <input type="text" 
+                    ng-model="name"
+                    ng-keyup="displayNumeric();">
+                <!-- ng-keyup .. keyup event binded by angular -->
+            </div>
+            <div>Total Numeric value of person's name is: {{totalValue}}</div>
         </div>
     </body>
 </html>
