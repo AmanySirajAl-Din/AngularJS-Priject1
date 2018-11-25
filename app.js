@@ -16,7 +16,7 @@
     .controller('myFirstController', function($scope){
         $scope.name = "Amany";
         $scope.sayHello = function(){
-            return "Hello Amany";
+            return "Hello Amany!";
         };
     });
      
