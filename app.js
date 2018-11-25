@@ -10,8 +10,11 @@
     
     // controller is to define the viewModel of our view
     // .controller('name of the controller, the functionality of it);
-    .controller('myFirstController', function(){
-        
+    // $anything in angular it means that 'anything' is reserved for angular
+    // $scope an object that allows us to share data
+    //scope will be accesable in the controller component
+    .controller('myFirstController', function($scope){
+        $scope.name = "Amany"
     });
      
 })();
